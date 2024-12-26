@@ -1,0 +1,99 @@
+/* Menata margin dan padding pada seluruh halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Membuat padding pada form */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* Menata header h2 */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Membuat tombol utama */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Menambahkan margin bawah pada tombol */
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+/* Styling untuk input form dan seleksi */
+input.form-control, select.form-select, textarea.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Menata label agar terlihat lebih jelas */
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Menambahkan hover pada input untuk memberi feedback kepada pengguna */
+input.form-control:hover, select.form-select:hover, textarea.form-control:hover {
+    border-color: #007bff;
+}
+
+/* Menambahkan efek saat form di fokuskan */
+input.form-control:focus, select.form-select:focus, textarea.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsivitas form */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}

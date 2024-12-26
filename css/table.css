@@ -1,0 +1,98 @@
+/* Mengatur margin dan padding untuk tabel */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Menghindari spasi antar border */
+}
+
+/* Mengatur header tabel dengan warna latar belakang gelap */
+thead {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Mengatur padding untuk cell header */
+thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Mengatur warna latar belakang baris pertama pada tabel */
+tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+/* Mengatur warna latar belakang baris kedua pada tabel */
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Mengatur efek hover untuk baris tabel */
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Mengatur padding cell pada tabel untuk memudahkan pembacaan */
+tbody td {
+    padding: 12px;
+    border: 1px solid #dee2e6; /* Memberikan border tipis antar cell */
+}
+
+/* Menambahkan jarak antar elemen dalam form input */
+.form-group, .mb-3 {
+    margin-bottom: 15px;
+}
+
+/* Menambahkan border pada input form */
+input[type="text"], input[type="email"], input[type="number"], textarea, select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+}
+
+/* Menambahkan border dan background pada tombol */
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9; /* Efek hover pada tombol */
+}
+
+/* Mengatur padding untuk div container */
+.row {
+    margin: 0 15px;
+}
+
+/* Untuk responsivitas layout, mengatur lebar kolom saat layar kecil */
+@media (max-width: 768px) {
+    .col-2, .col-6, .col-7 {
+        width: 100%;
+    }
+}
+
